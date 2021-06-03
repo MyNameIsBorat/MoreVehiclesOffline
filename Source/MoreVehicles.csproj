@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>MoreVehicles</AssemblyTitle>
+    <Company>dymanoid</Company>
+    <Product>MoreVehicles</Product>
+    <Description>A mod for the Cities:Skylines game</Description>
+    <Copyright>Copyright © 2019-2020, dymanoid</Copyright>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net35</TargetFramework>
+    <AssemblySearchPaths>
+      $(AssemblySearchPaths);
+      $(CitiesSkylinesBinaries)
+    </AssemblySearchPaths>
+    <OutputPath>..\bin\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SkyTools.Patching" Version="2.1.0" />
+    <PackageReference Include="GitVersionTask" Version="5.2.4" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8" />
+    <PackageReference Include="Roslynator.Analyzers" Version="2.3.0" />
+    <PackageReference Include="Roslynator.CodeAnalysis.Analyzers" Version="1.0.0-beta" />
+    <PackageReference Include="StyleCop.Analyzers.Unstable" Version="1.2.0.164" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="ColossalManaged" />
+    <Reference Include="ICities" />
+    <Reference Include="UnityEngine" />
+  </ItemGroup>
+  <Target Name="DeployToModsDirectory" AfterTargets="Build" DependsOnTargets="Build">
+    <PropertyGroup>
+      <CitiesSkylinesModDir>C:\Users\Sid\AppData\Local\Colossal Order\Cities_Skylines\Addons\Mods\MoreVehicles\</CitiesSkylinesModDir>
+    </PropertyGroup>
+    <ItemGroup>
+      <TargetBinaries Include="$(OutputPath)*.dll" />
+    </ItemGroup>
+    <Message Text="Deploying the mod package to: $(CitiesSkylinesModDir)" Importance="high" />
+    <Copy SourceFiles="@(TargetBinaries)" DestinationFolder="$(CitiesSkylinesModDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>
