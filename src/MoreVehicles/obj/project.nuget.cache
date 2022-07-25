@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "HiAYhQCSBxeA09mZjdDR+pKuny5li+7N4LQFnEF628ZPQ7DWbdRaBlL6oDgnjCZYiYLcyxkgFmHXxlGLzAVBJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sid\\Desktop\\csky mod test\\MoreVehicles-masterfrommodder\\MoreVehicles-master\\src\\MoreVehicles\\MoreVehicles.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sid\\.nuget\\packages\\lib.harmony\\1.2.0.1\\lib.harmony.1.2.0.1.nupkg.sha512",
+    "C:\\Users\\Sid\\.nuget\\packages\\microsoft.codeanalysis.fxcopanalyzers\\2.9.8\\microsoft.codeanalysis.fxcopanalyzers.2.9.8.nupkg.sha512",
+    "C:\\Users\\Sid\\.nuget\\packages\\microsoft.codeanalysis.versioncheckanalyzer\\2.9.8\\microsoft.codeanalysis.versioncheckanalyzer.2.9.8.nupkg.sha512",
+    "C:\\Users\\Sid\\.nuget\\packages\\microsoft.codequality.analyzers\\2.9.8\\microsoft.codequality.analyzers.2.9.8.nupkg.sha512",
+    "C:\\Users\\Sid\\.nuget\\packages\\microsoft.netcore.analyzers\\2.9.8\\microsoft.netcore.analyzers.2.9.8.nupkg.sha512",
+    "C:\\Users\\Sid\\.nuget\\packages\\microsoft.netframework.analyzers\\2.9.8\\microsoft.netframework.analyzers.2.9.8.nupkg.sha512",
+    "C:\\Users\\Sid\\.nuget\\packages\\roslynator.analyzers\\2.3.0\\roslynator.analyzers.2.3.0.nupkg.sha512",
+    "C:\\Users\\Sid\\.nuget\\packages\\roslynator.codeanalysis.analyzers\\1.0.0-beta\\roslynator.codeanalysis.analyzers.1.0.0-beta.nupkg.sha512",
+    "C:\\Users\\Sid\\.nuget\\packages\\skytools.common\\2.1.0\\skytools.common.2.1.0.nupkg.sha512",
+    "C:\\Users\\Sid\\.nuget\\packages\\skytools.patching\\2.1.0\\skytools.patching.2.1.0.nupkg.sha512",
+    "C:\\Users\\Sid\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.164\\stylecop.analyzers.unstable.1.2.0.164.nupkg.sha512"
+  ],
+  "logs": []
+}
